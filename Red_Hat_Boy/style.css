@@ -1,0 +1,161 @@
+.body{
+    margin: 0px;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url("Resources/background.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
+    visibility: hidden;
+}
+
+.boy{
+    top: 80px;
+    height: 210px;
+    margin-top: 347px;
+    position: absolute;
+}
+
+.box{
+    top: 80px; 
+    width: 160px;
+    height: 160px;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 443px;
+    background-image: url(Resources/spyro-dragon.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.score{
+
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+}
+
+
+.end{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(90deg,rgb(33, 32, 32) 0%, #1d1b1b 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    font-weight: bold;
+    opacity: 70%;
+    visibility: hidden;
+}
+
+.btn{
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 45px;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 15px;
+    position: relative;  
+    text-align: left;
+    transition: .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+  
+    
+        
+}
+
+.btn:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+
+.home{
+   
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: url(Resources/home.jpg);
+   
+}
+
+.name{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    justify-content: center;
+    margin-left: 470px;
+    margin-top: 350px;
+    color: rgb(168, 3, 3);
+
+}
+
+.subName{
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 25px;
+    justify-content: center;
+    margin-left: 670px;
+    margin-top: 10px;
+}
+.startBtn{
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 45px;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 15px;
+    position: relative;  
+    text-align: left;
+    transition: .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+.startBtn:hover {
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+  }
+  

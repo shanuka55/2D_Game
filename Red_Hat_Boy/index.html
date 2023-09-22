@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REd_Hat_Boy_Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body class="body" id="myBox" onload="idleAnimationStart(); createBoxes(); "  onkeypress="keyCheck(event);">
+
+    <div class="home" id="home">
+        <H2 class="name">The Red Hat Boy</H2>
+        <h4 class="subName">Start Your Journey</h4>
+        <button class="startBtn" id="startBtn" onclick="startClick();">Start Game</button>
+    </div>
+
+    <div class="background" id="background" >
+
+        <img src="Resources/Dead (1).png" class="boy" id="boy" />
+        <div class="scoreBox">
+            <div class="score" id="score">0</div>
+        </div>
+        
+
+    </div>
+    <div class="end" id="end">
+        <div style="color: rgb(246, 29, 0);">GAME OVER..!</div>
+        <div style="color: rgb(255, 106, 0);">Your Score</div>
+        <div style="color: rgb(207, 202, 202);" id="endScore">0</div>
+        <button class="btn" onclick="reload();">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
