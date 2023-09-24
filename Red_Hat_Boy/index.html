@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>REd_Hat_Boy_Game</title>
+    <title>Red_Hat_Boy_Game</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <div class="home" id="home">
         <H2 class="name">The Red Hat Boy</H2>
         <h4 class="subName">Start Your Journey</h4>
-        <button class="startBtn" id="startBtn" onclick="startClick();">Start Game</button>
+        <button class="startBtn" id="startBtn" onclick="startClick();" onmousedown="sound1.play();">start Game</button>
     </div>
 
     <div class="background" id="background" >
@@ -28,10 +28,12 @@
 
     </div>
     <div class="end" id="end">
-        <div style="color: rgb(246, 29, 0);">GAME OVER..!</div>
-        <div style="color: rgb(255, 106, 0);">Your Score</div>
-        <div style="color: rgb(207, 202, 202);" id="endScore">0</div>
-        <button class="btn" onclick="reload();">Try Again</button>
+        <div style="color: rgb(240, 94, 75); font-family: 'Exo 2', sans-serif;
+        font-family: 'Press Start 2P', cursive;">GAME OVER..!</div>
+        <div style="color: rgb(255, 255, 255);">Your Score</div>
+        <div style="color: rgb(211, 209, 209);" id="endScore">0</div>
+        <button class="btn"   onclick="reload();" >Try Again</button>
+        
     </div>
 
     <script src="script.js"></script>

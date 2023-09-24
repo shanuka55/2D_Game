@@ -31,11 +31,16 @@ function runAnimation() {
     }
 
     boy.src = "Resources/run ("+runImageNumber+").png";
+
+    //run sound
+    run.play(); 
+    background.play();
 }
 
 function runAnimationStart(){
     runAnimationNumber = setInterval(runAnimation,100);
     clearInterval(idleAnimationNumber);
+
 }
 
 jumpImageNumber = 1;
@@ -76,6 +81,7 @@ function jumpAnimationStart(){
     runImageNumber = 0;
     clearInterval(runAnimationNumber);
     jumpAnimationNumber = setInterval(jumpAnimation,100);
+    jump.play();
 }
 
 function keyCheck(event){
@@ -88,6 +94,8 @@ function keyCheck(event){
     if(keyCode == 13){
         if(runAnimationNumber == 0){
             runAnimationStart();
+
+            
         }
 
         if(moveBackgroundAnimationId == 0){
@@ -100,8 +108,10 @@ function keyCheck(event){
     }
 
     if(keyCode == 32){
+        
         if(jumpAnimationNumber == 0){
             jumpAnimationStart();
+            
         }
 
         if(moveBackgroundAnimationId == 0){
@@ -111,6 +121,8 @@ function keyCheck(event){
         if(boxAnimationId == 0){
             boxAnimationId = setInterval(boxAnimation,100);
         }
+
+        
 
     }
 
@@ -195,16 +207,22 @@ deadAnimationNumber = 0;
 
 //Dead Animation
 function boyDeadAnimation(){
+    dead.play();
+    
     deadImageNumber = deadImageNumber + 1;
      if(deadImageNumber == 11){
         deadImageNumber = 10;
 
         document.getElementById("end").style.visibility = "visible";
         document.getElementById("endScore").innerHTML = score;
+     
+
      }
 
     //boy.src="Resources/Dead("+deadImageNumber+").png";
     boy.src = "Resources/Dead ("+deadImageNumber+").png"; 
+    
+    
 }
 
 
@@ -216,7 +234,44 @@ function reload(){
 function startClick(){
     
     document.getElementById("background").style.visibility = "visible";
+    
+    
 }
+
+//let playSound = document.getElementById("startBtn");
+
+// function sound(){
+    
+//     let audio = new Audio ("Resources/sounds/sound01.wav");
+//     audio.playSound()
+    
+// }
+// playSound.addEventListener("click", sound);
+
+var sound1 = new Audio();
+sound1.src = "Resources/sounds/sound01.wav";
+
+var sound02 = new Audio();
+sound02.src = "Resources/sounds/sound02.wav";
+
+var dead = new Audio();
+dead.src = "Resources/sounds/dead.mp3";
+
+var run = new Audio();
+run.src = "Resources/sounds/run.mp3";
+
+var jump = new Audio();
+jump.src = "Resources/sounds/jump.mp3";
+
+var game = new Audio();
+jump.src = "Resources/sounds/jump.mp3";
+
+var background = new Audio();
+background.src = "Resources/sounds/background.mp3";
+
+
+
+
 
 
 

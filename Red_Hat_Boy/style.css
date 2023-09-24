@@ -104,6 +104,7 @@
     background-size: cover;
     background-repeat: repeat-x;
     background-image: url(Resources/home.jpg);
+    opacity: 90%;
    
 }
 
@@ -112,22 +113,25 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 50px;
     justify-content: center;
-    margin-left: 470px;
+    margin-left: 430px;
     margin-top: 350px;
-    color: rgb(168, 3, 3);
+    color: rgb(199, 35, 35);
 
 }
 
 .subName{
     font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
-    font-size: 25px;
+    font-size: 35px;
     justify-content: center;
-    margin-left: 670px;
+    margin-left: 600px;
     margin-top: 10px;
+    color: rgb(44, 42, 40);
+    font-style:oblique;
+    
 }
 .startBtn{
     align-items: center;
-    background: #f5f5fa;
+    background: #d5cf7c;
     border: 0;
     border-radius: 8px;
     box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
@@ -150,7 +154,7 @@
     width: max-content;
     word-break: normal;
     word-spacing: normal;
-    margin-left: 650px;
+    margin-left: 640px;
     margin-top: 50px;
 }
 
